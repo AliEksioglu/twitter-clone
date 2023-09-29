@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import classNames from "classnames";
 import mainMenu from "../../../utils/const";
+import Button from "../../../componenets/button";
 
 function Menu() {
   return (
@@ -27,7 +28,7 @@ function Menu() {
           )}
         </NavLink>
       ))}
-      <button className="py-1 block group">
+      <button className="py-[3px] block group">
         <div className="p-2.5 rounded-full inline-flex items-center gap-5 group-hover:bg-[#eff3f41a]">
           <div className="w-[26px] h-[26px] relative ">
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -40,6 +41,9 @@ function Menu() {
           <div className="pr-4 text-xl">Daha Fazla</div>
         </div>
       </button>
+      <div className="py-4 w-[90%]" >
+      <Button size='large' > Gönder </Button>
+      </div>
     </nav>
   );
 }
