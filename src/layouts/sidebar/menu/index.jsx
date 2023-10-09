@@ -1,10 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import classNames from "classnames";
 import mainMenu from "../../../utils/const";
-import Button from "../../../componenets/button";
+import Button from "../../../components/button";
 import More from "./more";
 
-function Menu() {
+function Menu(){
   return (
     <nav className="mt-0.5 mb-1">
       {mainMenu.map((menu, index) => (
